@@ -7,7 +7,7 @@ function addBooks() {
   localStorage.setItem(bookName, bookAuthor)
 }
 
-myStorage = window.localStorage;
-
-alert(myStorage)
+function removeBooks(book) {
+  localStorage.removeItem(book);
+}
 
