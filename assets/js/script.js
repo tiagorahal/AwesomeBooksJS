@@ -15,7 +15,7 @@ function removeBooks(book) {
 
 let html =[]
 let result = bookArray.forEach(([key, value]) => {
-  html.push("<p> Book:\n" + key + "<br>Author:\n" + value + "</p>") });
+  html.push("<p> Book:\n" + key + "<br>Author:\n" + value + "</p>" + "<button id='remove-element'>Remove</button><br><br>") });
 
 
-document.getElementById('book-list').innerHTML = html;
+document.getElementById('book-list').innerHTML = html.join(" ");
