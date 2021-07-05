@@ -1,5 +1,5 @@
 let bookArray = [];
-
+let myStorage = window.localStorage;
 
 function addBooks() {
   let bookName = document.getElementById('name-book').value;
@@ -11,3 +11,11 @@ function removeBooks(book) {
   localStorage.removeItem(book);
 }
 
+function makeArray() {
+  bookArray = Object.entries(myStorage);
+  
+}
+
+makeArray()
+
+console.log(bookArray);
