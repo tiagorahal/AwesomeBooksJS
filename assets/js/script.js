@@ -13,4 +13,9 @@ function removeBooks(book) {
   bookArray = Object.entries(myStorage);
 }
 
-console.log(bookArray);
+let html =[]
+let result = bookArray.forEach(([key, value]) => {
+  html.push("<p> Book:\n" + key + "<br>Author:\n" + value + "</p>") });
+
+
+document.getElementById('book-list').innerHTML = html;
