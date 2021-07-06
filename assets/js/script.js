@@ -20,16 +20,9 @@ class Book {
   removeBooks(i) {
     localStorage.removeItem(i);
     this.bookArray = Object.entries(window.localStorage);
-    location.reload();
+    window.location.reload();
   }
 }
 
 const book = new Book();
 book.display();
-
-// function removeBooks(i) {
-//   let titlebook = String(i);
-//   localStorage.removeItem(titlebook);
-//   book.bookArray = Object.entries(window.localStorage);
-//   location.reload();
-// }
