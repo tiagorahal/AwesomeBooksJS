@@ -14,12 +14,12 @@
     </header>
     <main>
         <div id="book-list"></div>
-        <form onsubmit="return addBooks()">
+        <form onsubmit="return book.addBooks()">
             <label for="name-book">Put your books title here</label><br>
             <input type="text" id="name-book" name="name-book" placeholder="Put your title here" required><br>
             <label for="author-book">Put your books author here</label><br>
             <input type="text" id="author-book" name="author-book" placeholder="Put your author here" required><br><br>
-            <button type="submit"  onclick='addBooks();'>Add</button>
+            <button type="submit">Add</button>
         </form>
     </main>
     <script src="./assets/js/script.js"></script>
