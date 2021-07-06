@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- <link rel='stylesheet' href='css/style.css'> -->
+    <title>Awesome Books</title>
+</head>
+<body>
+    <header>
+        <h1>Awesome Books</h1>
+    </header>
+    <main>
+        <div id="book-list"></div>
+        <form onsubmit="return addBooks()">
+            <label for="name-book">Put your books title here</label><br>
+            <input type="text" id="name-book" name="name-book" placeholder="Put your title here" required><br>
+            <label for="author-book">Put your books author here</label><br>
+            <input type="text" id="author-book" name="author-book" placeholder="Put your author here" required><br><br>
+            <button type="submit"  onclick='addBooks();'>Add</button>
+        </form>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
