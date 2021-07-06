@@ -3,60 +3,74 @@ Awesome books is a website where you can organize your books and create new item
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
-
-> One paragraph statement about the project.
+# AwesomeBooksJS
+Awesome books is a website where you can organize your books and create new items. this repo is for educational purpose
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
-
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
+- JavaScript
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://raw.githack.com/jacobo12montes/AwesomeBooksJS/add/books/index.html?name-book=title&author-book=author)
 
 
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
+## Getting started
 
 ### Prerequisites
 
-### Setup
+- Browser (Google Chrome, Mozilla Firefox, Safari or any other browser)
+- Text editor (strongly recommended VS Code)
+- Empty directory where the repo is to be cloned
 
-### Install
+### To get a local copy of this repo
 
-### Usage
+Run the following commands in the terminal in the next order:
 
-### Run tests
+- Step 1:  
+  $ cd "here comes the path of your selected directory (double quotes must not be here)"
 
-### Deployment
+- Step 2:
+  $ git clone https://github.com/jacobo12montes/AwesomeBooksJS.git
+
+### To run this project in your local environment
+
+- Step 1:
+  Open index.html file in a browser.
+
+- Step 2:
+  Try it on!
+
+
+### How to use the aplication
+
+- Step 1:
+  Fill the form.
+
+- Step 2:
+  You can remove your books from the table clicking on " X ".
 
 
 
 ## Authors
 
-👤 **Author1**
+👤  **Juan Jacobo Hincapie**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- Gmail: [@gmail](jacobo12.montes@gmail.com)
+- Github: [@githubhandle](https://github.com/jacobo12montes)
+- Twitter: [@twitterhandle](https://twitter.com/HincapieMontes)
+- Linkedin: [linkedin](https://www.linkedin.com/in/juan-jacobo-hincapi%C3%A9-montes-93975210b/)
 
-👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Tiago Rahal Aires**
+
+- GitHub: [@tiagorahal](https://github.com/tiagorahal)
+- Twitter: [@RahalAires](https://twitter.com/RahalAires)
+- LinkedIn: [Tiago Rahal Aires](https://linkedin.com/tiagorahal)
 
 ## 🤝 Contributing
 
@@ -70,9 +84,6 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
