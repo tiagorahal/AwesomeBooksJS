@@ -3,35 +3,28 @@ let html =[];
 let myStorage = window.localStorage;
 bookArray = Object.entries(myStorage);
 
-
 function addBooks() {
   let bookName = document.getElementById('name-book').value;
   let bookAuthor = document.getElementById('author-book').value;
   localStorage.setItem(bookName, bookAuthor)
 }
 
-function removeBooks(book) {
-  localStorage.removeItem(book);
-  bookArray = Object.entries(myStorage);
-}
-
-function removeBooksButton() {
+function removeBooks(i) {
+  let title = i.firstChild.innerText;
+  console.log(title);
   Object.fromEntries(bookArray);
-  console.log(bookArray);
-}
-
-function testing() {
-  console.log('testing');
+  localStorage.removeItem(title);
+  bookArray = Object.entries(myStorage);
+  console.log(html);
+  i.remove();
 }
 
 const result = bookArray.forEach(([key, value]) => {
-  html.push("<p> Book:\n" + key + "<br>Author:\n" + value + "</p>" + "<button id='remove-element'>Remove</button><br><br>") });
-
-
+  html.push("<div class='book'><p class='book-title'>" + key + "</p><p class='book-author'>" + value + "</p>" + "<button class='remove'>Remove</button><br><br></div>") });
+  
 document.getElementById('book-list').innerHTML = html.join(" ");
 
-  
-document.querySelector("button").addEventListener("click", testing);
-
-  
-
+for (let i = 0; i < document.getElementsByClassName('remove').length ; i++) {
+  let bookTitle = document.getElementsByClassName('remove')[i].parentElement;
+  document.getElementsByClassName('remove')[i].addEventListener('click', function() { removeBooks(bookTitle); } );
+}
