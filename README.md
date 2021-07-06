@@ -3,9 +3,6 @@ Awesome books is a website where you can organize your books and create new item
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# AwesomeBooksJS
-Awesome books is a website where you can organize your books and create new items. this repo is for educational purpose
-
 ![screenshot](./app_screenshot.png)
 
 ## Built With
@@ -76,7 +73,7 @@ Run the following commands in the terminal in the next order:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/jacobo12montes/AwesomeBooksJS/issues).
 
 ## Show your support
 
