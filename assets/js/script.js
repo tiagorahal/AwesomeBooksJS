@@ -1,6 +1,8 @@
 let bookArray = [];
+let html =[];
 let myStorage = window.localStorage;
 bookArray = Object.entries(myStorage);
+
 
 function addBooks() {
   let bookName = document.getElementById('name-book').value;
@@ -13,9 +15,19 @@ function removeBooks(book) {
   bookArray = Object.entries(myStorage);
 }
 
-let html =[]
-let result = bookArray.forEach(([key, value]) => {
+function removeBooksButton() {
+  Object.fromEntries(bookArray);
+  console.log(bookArray);
+}
+
+const result = bookArray.forEach(([key, value]) => {
   html.push("<p> Book:\n" + key + "<br>Author:\n" + value + "</p>" + "<button id='remove-element'>Remove</button><br><br>") });
 
 
 document.getElementById('book-list').innerHTML = html.join(" ");
+
+  
+document.querySelector("button").onclick = console.log("testing");
+
+  
+
