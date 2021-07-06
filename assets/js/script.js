@@ -1,30 +1,29 @@
 let bookArray = [];
-let html =[];
-let myStorage = window.localStorage;
+const html = [];
+const myStorage = window.localStorage;
 bookArray = Object.entries(myStorage);
 
 function addBooks() {
-  let bookName = document.getElementById('name-book').value;
-  let bookAuthor = document.getElementById('author-book').value;
-  localStorage.setItem(bookName, bookAuthor)
+  const bookName = document.getElementById('name-book').value;
+  const bookAuthor = document.getElementById('author-book').value;
+  localStorage.setItem(bookName, bookAuthor);
 }
 
 function removeBooks(i) {
-  let title = i.firstChild.innerText;
-  console.log(title);
+  const title = i.firstChild.innerText;
   Object.fromEntries(bookArray);
   localStorage.removeItem(title);
   bookArray = Object.entries(myStorage);
-  console.log(html);
   i.remove();
 }
 
 const result = bookArray.forEach(([key, value]) => {
-  html.push("<div class='book'><p class='book-title'>" + key + "</p><p class='book-author'>" + value + "</p>" + "<button class='remove'>Remove</button><br><br></div>") });
-  
-document.getElementById('book-list').innerHTML = html.join(" ");
+  html.push(`<div class='book'><p class='book-title'>${key}</p><p class='book-author'>${value}</p>` + '<button class=\'remove\'>Remove</button><br><br></div>');
+});
 
-for (let i = 0; i < document.getElementsByClassName('remove').length ; i++) {
-  let bookTitle = document.getElementsByClassName('remove')[i].parentElement;
-  document.getElementsByClassName('remove')[i].addEventListener('click', function() { removeBooks(bookTitle); } );
+document.getElementById('book-list').innerHTML = html.join(' ');
+
+for (let i = 0; i < document.getElementsByClassName('remove').length; i++) {
+  const bookTitle = document.getElementsByClassName('remove')[i].parentElement;
+  document.getElementsByClassName('remove')[i].addEventListener('click', () => { removeBooks(bookTitle); });
 }
