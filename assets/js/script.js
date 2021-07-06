@@ -1,6 +1,7 @@
 class Book {
   constructor() {
-    this.bookarray = Object.entries(window.localStorage);
+    this.bookArray = [];
+    this.bookArray = Object.entries(window.localStorage);
     this.html = [];
   }
 
@@ -10,22 +11,18 @@ class Book {
     localStorage.setItem(this.bookName, this.bookAuthor);
   }
 
-  
+  display() {
+    this.bookArray.forEach(([key, value]) => {
+      this.html.push(`<div class='book'><p class='book-title'>${key}</p><p class='book-author'>${value}</p><button class='remove'>Remove</button><br><br></div>`);
+    });
+    document.getElementById('book-list').innerHTML = this.html.join(' ');
+  }
+
 
 }
 
 const book = new Book();
-
-// let bookArray = [];
-// const html = [];
-// bookArray = Object.entries(window.localStorage);
-
-// eslint-disable-next-line no-unused-vars
-// function addBooks() {
-//   const bookName = document.getElementById('name-book').value;
-//   const bookAuthor = document.getElementById('author-book').value;
-//   localStorage.setItem(bookName, bookAuthor);
-// }
+book.display();
 
 function removeBooks(i) {
   const title = i.firstChild.innerText;
@@ -37,11 +34,11 @@ function removeBooks(i) {
 
 
 
-bookArray.forEach(([key, value]) => {
-  html.push(`<div class='book'><p class='book-title'>${key}</p><p class='book-author'>${value}</p><button class='remove'>Remove</button><br><br></div>`);
-});
+// bookArray.forEach(([key, value]) => {
+//   html.push(`<div class='book'><p class='book-title'>${key}</p><p class='book-author'>${value}</p><button class='remove'>Remove</button><br><br></div>`);
+// });
 
-document.getElementById('book-list').innerHTML = html.join(' ');
+// document.getElementById('book-list').innerHTML = html.join(' ');
 
 for (let i = 0; i < document.getElementsByClassName('remove').length; i += 1) {
   const bookTitle = document.getElementsByClassName('remove')[i].parentElement;
