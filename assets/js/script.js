@@ -20,6 +20,10 @@ function removeBooksButton() {
   console.log(bookArray);
 }
 
+function testing() {
+  console.log('testing');
+}
+
 const result = bookArray.forEach(([key, value]) => {
   html.push("<p> Book:\n" + key + "<br>Author:\n" + value + "</p>" + "<button id='remove-element'>Remove</button><br><br>") });
 
@@ -27,7 +31,7 @@ const result = bookArray.forEach(([key, value]) => {
 document.getElementById('book-list').innerHTML = html.join(" ");
 
   
-document.querySelector("button").onclick = console.log("testing");
+document.querySelector("button").addEventListener("click", testing);
 
   
 
