@@ -3,39 +3,39 @@
   padding: 0;
 }
 
-#top-title {
+#top-title,
+#top-title-add {
   font-size: 2em;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.book-title {
-  font-size: 1rem;
-}
-
-.book-author {
-  font-size: 1rem;
-}
-
-.remove {
-  padding-left: 1px;
-  padding-right: 1px;
-  margin: auto;
-  border-color: black;
-  border-width: 2px;
-  border-radius: 5px;
+#book-add {
+  max-width: 700px;
 }
 
 #book-list {
   background-color: rgba(168, 167, 164, 0.671);
 }
 
+.book-title,
+.book-author {
+  font-size: 1rem;
+}
+
+.remove {
+  padding: 0 1px;
+  margin: auto;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 5px;
+}
 
 .book:nth-child(odd) {
   background-color: #5a5858bc;
 }
 
 .book:nth-child(even) {
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
