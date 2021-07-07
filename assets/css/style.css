@@ -10,52 +10,47 @@
   padding-bottom: 10px;
 }
 
-#book-list {
+.book-list {
 
 }
 
-.book {
+
+
+/* .book {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-}
+} */
 
-.book-title {
+/* .book-title {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: auto;
-}
-
+} */
+/* 
 .book-author {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: auto;
-}
+} */
 
-.remove {
+/* .remove {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 0.8rem;
   padding-left: 6px;
   padding-right: 6px;
+} */
+
+
+
+.book-list:nth-child(odd) {
+  background-color: #fa0606;
 }
-
-
-/*
-
-  li {
-    color: black;
+.book-list:nth-child(even) {
+    background-color: blue;
 }
-li:nth-child(odd) {
-    color: #777;
-}
-li:nth-child(even) {
-    color: blue;
-}
-
-
-*/
