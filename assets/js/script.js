@@ -12,7 +12,7 @@ class Book {
 
   display() {
     this.bookArray.forEach(([key, value]) => {
-      this.html.push(`<div class='book'><p class='book-title'>${key}</p><p class='book-author'>${value}</p><button class='remove' onclick="book.removeBooks('${key}')">Remove</button><br><br></div>`);
+      this.html.push(`<div class='book'><p class='book-title m-0'>${key}</p><p class='book-author m-0'>${value}</p><button class='remove' onclick="book.removeBooks('${key}')">Remove</button><br><br></div>`);
     });
     document.getElementById('book-list').innerHTML = this.html.join(' ');
   }
