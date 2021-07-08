@@ -2,6 +2,8 @@ class Book {
   constructor() {
     this.bookArray = Object.entries(window.localStorage);
     this.html = [];
+    this.none = 'none';
+    this.block = 'block';
   }
 
   addBooks() {
@@ -23,28 +25,32 @@ class Book {
     window.location.reload();
   }
 
-  navList() {    
-    document.getElementById('add-container').style.display = "none";
-    document.getElementById('contact-container').style.display = "none";
-    document.getElementById('list-container').style.display = "block";
+  navList() {
+    document.getElementById('add-container').style.display = this.none;
+    document.getElementById('contact-container').style.display = this.none;
+    document.getElementById('list-container').style.display = this.block;
   }
 
-  navAdd() {    
-    document.getElementById('contact-container').style.display = "none";
-    document.getElementById('list-container').style.display = "none";
-    document.getElementById('add-container').style.display = "block";
+  navAdd() {
+    document.getElementById('contact-container').style.display = this.none;
+    document.getElementById('list-container').style.display = this.none;
+    document.getElementById('add-container').style.display = this.block;
   }
 
-  navContact() {    
-    document.getElementById('add-container').style.display = "none";
-    document.getElementById('list-container').style.display = "none";
-    document.getElementById('contact-container').style.display = "block";
+  navContact() {
+    document.getElementById('add-container').style.display = this.none;
+    document.getElementById('list-container').style.display = this.none;
+    document.getElementById('contact-container').style.display = this.block;
   }
 }
 
 const book = new Book();
 book.display();
 
+/* global luxon */
+/* eslint no-undef: "error" */
 const timenow = luxon.DateTime.now();
 
-document.getElementById('time-tag-now').innerHTML= timenow.toLocaleString({ month: 'long', day: 'numeric', year: 'numeric', minute: '2-digit', hour: 'numeric', second:'numeric' });
+document.getElementById('time-tag-now').innerHTML = timenow.toLocaleString({
+  month: 'long', day: 'numeric', year: 'numeric', minute: '2-digit', hour: 'numeric', second: 'numeric',
+});
