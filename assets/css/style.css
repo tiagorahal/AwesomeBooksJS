@@ -3,6 +3,32 @@
   padding: 0;
 }
 
+#body-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-div {
+ margin-bottom: 80px;
+}
+
+#footer {
+  
+  max-width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 10px;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer-div {
+  background-color: rgb(255, 255, 255);
+}
+
 #top-title,
 #top-title-add {
   font-size: 2em;
