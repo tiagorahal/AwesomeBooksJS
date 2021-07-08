@@ -13,9 +13,9 @@
 <body id="body-div">
     <header class="container-fluid pt-4">
         <nav class="d-flex border border-3 border-dark p-2">
-            <div class="col-6"><h1>Awesome Books</h1></div>
-            <div class="col-6 d-flex justify-content-end align-items-center">
-                <a class="px-2 text-decoration-none text-dark fw-bold" href="#" onclick="book.navList()">List</a>
+            <div id="navbar-title" class="col-6"><h1>Awesome Books</h1></div>
+            <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end align-items-center">
+                <a class="px-2 text-decoration-none text-dark fw-bold " href="#" onclick="book.navList()">List</a>
                 <a class="px-2 text-decoration-none text-dark fw-bold border-start border-end border-2 border-dark" href="#" onclick="book.navAdd()">Add New Book</a>
                 <a class="px-2 text-decoration-none text-dark fw-bold" href="#" onclick="book.navContact()">Contact</a>
             </div>
@@ -39,8 +39,22 @@
                 <button class="w-25 align-self-end" type="submit">Add</button>
             </form>
         </div>
-        <div id="contact-container">
-
+        <div id="contact-container" class="container-fluid">
+            <div class="row">
+                <div id="contact-title" class="col-12 d-flex flex-column justify-content-center align-items-center">
+                    <h2 id="contact-title-inner" class="fw-bolder">Contact information</h3>
+                </div>
+                <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                    <p class="inner-text fw-bold">
+                        Do you have any questions or you just want to say "Hello"?<br>You can reach out to us!
+                    </p>
+                </div>
+                <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                    <p class="inner-text fw-bold">
+                        Our e-mail: mail.mail.com<br>Our phone number : 0043548675422<br>Our address Streetname 22, 84503 City, Country
+                    </p>
+                </div>
+            </div>
         </div>
     </main>
     <footer id="footer" class="container-fluid pt-4">
