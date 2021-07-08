@@ -15,26 +15,29 @@
         <nav class="d-flex border border-3 border-dark p-2">
             <div class="col-6"><h1>Awesome Books</h1></div>
             <div class="col-6 d-flex justify-content-end align-items-center">
-                <a class="px-2 text-decoration-none text-dark fw-bold" href="#" onclick="navList()">List</a>
-                <a class="px-2 text-decoration-none text-dark fw-bold border-start border-end border-2 border-dark" href="#" onclick="navAdd()">Add New Book</a>
-                <a class="px-2 text-decoration-none text-dark fw-bold" href="#" onclick="navContact()">Contact</a>
+                <a class="px-2 text-decoration-none text-dark fw-bold" href="#" onclick="book.navList()">List</a>
+                <a class="px-2 text-decoration-none text-dark fw-bold border-start border-end border-2 border-dark" href="#" onclick="book.navAdd()">Add New Book</a>
+                <a class="px-2 text-decoration-none text-dark fw-bold" href="#" onclick="book.navContact()">Contact</a>
             </div>
         </nav>
     </header>
     <main id="main-div" class="container">
-        <div class="">
+        <div id="list-container">
             <h2 id="top-title">All awesome Books</h2>
             <div class="row border border-3 border-dark p-2 book-listing" id="book-list"></div>
         </div>
-        
 
-    
-        <h2 id="top-title-add">Add a new Book</h2>
-        <form class="d-flex flex-column w-75 m-auto" id="book-add" onsubmit="return book.addBooks()">
-            <input type="text" id="name-book" name="name-book" placeholder="Put your title here" required><br>
-            <input type="text" id="author-book" name="author-book" placeholder="Put your author here" required><br><br>
-            <button class="w-25 align-self-end" type="submit">Add</button>
-        </form>
+        <div id="add-container">
+            <h2 id="top-title-add">Add a new Book</h2>
+            <form class="d-flex flex-column w-75 m-auto" id="book-add" onsubmit="return book.addBooks()">
+                <input type="text" id="name-book" name="name-book" placeholder="Put your title here" required><br>
+                <input type="text" id="author-book" name="author-book" placeholder="Put your author here" required><br><br>
+                <button class="w-25 align-self-end" type="submit">Add</button>
+            </form>
+        </div>
+        <div id="contact-container">
+
+        </div>
     </main>
     <footer id="footer" class="container-fluid pt-4">
         <div class="footer-div row d-flex border border-3 border-dark">

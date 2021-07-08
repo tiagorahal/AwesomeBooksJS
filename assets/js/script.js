@@ -22,7 +22,26 @@ class Book {
     this.bookArray = Object.entries(window.localStorage);
     window.location.reload();
   }
+
+  navList() {    
+    document.getElementById('add-container').style.display = "none";
+    document.getElementById('contact-container').style.display = "none";
+    document.getElementById('list-container').style.display = "block";
+  }
+
+  navAdd() {    
+    document.getElementById('contact-container').style.display = "none";
+    document.getElementById('list-container').style.display = "none";
+    document.getElementById('add-container').style.display = "block";
+  }
+
+  navContact() {    
+    document.getElementById('add-container').style.display = "none";
+    document.getElementById('list-container').style.display = "none";
+    document.getElementById('contact-container').style.display = "block";
+  }
 }
 
 const book = new Book();
 book.display();
+const element = document.getElementById('list-container')

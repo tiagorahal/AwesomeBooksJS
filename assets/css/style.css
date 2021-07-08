@@ -65,3 +65,11 @@
 .book:nth-child(even) {
   background-color: rgb(255, 255, 255);
 }
+
+#add-container {
+  display: none;
+}
+
+#contact-container {
+  display: none;
+}
