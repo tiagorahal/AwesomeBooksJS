@@ -44,4 +44,7 @@ class Book {
 
 const book = new Book();
 book.display();
-const element = document.getElementById('list-container')
+
+const timenow = luxon.DateTime.now();
+
+document.getElementById('time-tag-now').innerHTML= timenow.toLocaleString({ month: 'long', day: 'numeric', year: 'numeric', minute: '2-digit', hour: 'numeric', second:'numeric' });
